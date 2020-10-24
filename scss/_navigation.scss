@@ -1,0 +1,86 @@
+.site-header {
+  width: 100%;
+  height: 15vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 2px 14% 0 13%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3px;
+}
+.logo-text {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.logo-text::after {
+  display: block;
+  content: "";
+  width: 0.15em;
+  height: 0.15em;
+  background-color: #1effce;
+  border-radius: 50%;
+  position: relative;
+  top: 0.2em;
+}
+.navigation {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  @include media-tablet {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+}
+.nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  @include media-tablet{
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    top: 0;
+    padding-top: 10vh;
+    .open {
+      display: block;
+    }
+  }
+}
+.nav-tab {
+  @include media-tablet {
+    display: none;
+    margin-top: 2vh;
+    .open {
+      display: block;
+    }
+  }
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 0.55em;
+  font-weight: 700;
+  @include media-tablet{
+      font-size: 0.8em;
+  }
+}

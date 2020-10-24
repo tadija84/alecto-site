@@ -1,0 +1,386 @@
+@font-face {
+  font-family: Raleway;
+  font-weight: 500;
+  src: url(./Raleway/static/Raleway-Regular.ttf); }
+
+@font-face {
+  font-family: Raleway;
+  font-weight: 900;
+  src: url(./Raleway/static/Raleway-ExtraBold.ttf); }
+
+@font-face {
+  font-family: Raleway;
+  font-weight: 100;
+  src: url(./Raleway/static/Raleway-Light.ttf); }
+
+@font-face {
+  font-family: Raleway;
+  font-weight: 400;
+  src: url(./Raleway/static/Raleway-Italic.ttf); }
+
+@font-face {
+  font-family: Raleway;
+  font-weight: 400;
+  src: url(./Raleway/static/Raleway-Medium.ttf); }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Raleway;
+  font-weight: 500; }
+
+.learn-more-button {
+  background-color: #17daa2;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  width: 120px;
+  height: 28px; }
+  @media screen and (max-width: 768px) {
+    .learn-more-button {
+      margin: 0 calc(50% - 60px); } }
+
+.hero-banner {
+  width: 100%;
+  height: 115vh;
+  background-image: url("./images/marcelo-quinan-R3pUGn5YiTg-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 45vh 13% 35vh;
+  display: flex;
+  justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .hero-banner {
+      padding: 45vh 10% 20vh; } }
+  @media screen and (max-width: 460px) {
+    .hero-banner {
+      padding: 45vh 5% 10vh; } }
+
+.carousell-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.carousell-heading {
+  color: white;
+  font-size: 2.6em;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  text-align: center; }
+
+.alecto-span {
+  font-weight: 600; }
+
+.carousell-paraf {
+  color: white;
+  font-weight: 300; }
+
+.carousell-button {
+  background-color: #00b6cb;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  width: 120px;
+  height: 32px; }
+
+.left-arrow,
+.right-arrow {
+  color: #00b6cb;
+  font-size: 3.5em; }
+
+.menu-button {
+  display: none;
+  position: absolute;
+  z-index: 17;
+  right: 5vw;
+  top: 5vw;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out; }
+  .menu-button__burger {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 28px;
+    height: 3px;
+    background-color: turquoise;
+    transition: all 0.5s ease-in-out; }
+    .menu-button__burger::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      width: 28px;
+      height: 3px;
+      background-color: turquoise;
+      transition: all 0.5s ease-in-out; }
+    .menu-button__burger::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      width: 28px;
+      height: 3px;
+      background-color: turquoise;
+      transition: all 0.5s ease-in-out; }
+    .menu-button__burger.open {
+      transform: rotate(360deg);
+      background: transparent; }
+      .menu-button__burger.open::before {
+        transform: rotate(45deg) translate(5px, 8px); }
+      .menu-button__burger.open::after {
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -7px); }
+  @media screen and (max-width: 768px) {
+    .menu-button {
+      display: block; } }
+
+.our-work,
+.our-services {
+  display: flex;
+  width: 100%;
+  height: 75vh;
+  padding: 0 13%; }
+
+.our-work {
+  background-color: #f9f9f9; }
+  @media screen and (max-width: 768px) {
+    .our-work {
+      flex-direction: column;
+      height: 100vh; } }
+
+@media screen and (max-width: 768px) {
+  .our-services {
+    flex-direction: column-reverse;
+    height: 100vh; } }
+
+.picture-half {
+  display: block;
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  height: 100%; }
+  @media screen and (max-width: 768px) {
+    .picture-half {
+      width: 100%;
+      background-size: contain; } }
+
+.text-half {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 9vh 0 10vh; }
+  @media screen and (max-width: 768px) {
+    .text-half {
+      width: 100%;
+      height: 60%;
+      padding: 0 0 10vh;
+      justify-content: space-between; } }
+  @media screen and (max-width: 460px) {
+    .text-half {
+      height: 70%; } }
+
+.work-heading {
+  font-size: 2.6em;
+  font-weight: 100; }
+  @media screen and (max-width: 768px) {
+    .work-heading {
+      text-align: center; } }
+
+.work-paraf {
+  color: #76828b;
+  font-size: 0.7em;
+  line-height: 2.3; }
+  @media screen and (max-width: 768px) {
+    .work-paraf {
+      text-align: center; } }
+
+.container {
+  margin: 0 auto;
+  padding: 11vh 15%; }
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 10vh 5%; } }
+
+.main-heading,
+.main-paraf {
+  width: 100%;
+  text-align: center;
+  color: #76828b; }
+
+.main-heading {
+  font-size: 2.4em;
+  font-weight: 100;
+  letter-spacing: 2px; }
+
+.main-heading::after {
+  display: block;
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 5%;
+  border-bottom: 1px solid #7ceaca;
+  margin: 0 auto;
+  padding: 4px 0px; }
+
+.main-paraf {
+  margin-top: 5vh;
+  font-size: 0.7em; }
+
+.four-divs {
+  margin-top: 17vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .four-divs {
+      display: inline; } }
+  @media screen and (max-width: 460px) {
+    .four-divs {
+      margin-top: 5vh;
+      display: flex;
+      flex-direction: column; } }
+
+.one-of-four {
+  width: 20%;
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    .one-of-four {
+      float: left;
+      margin: 3vh 5%;
+      width: 40%;
+      border: solid 1px #76828b;
+      padding: 4vh 5%; } }
+  @media screen and (max-width: 460px) {
+    .one-of-four {
+      width: 90%;
+      margin: 5vh 0; } }
+
+.one-of-four:hover .icon-disp {
+  background-color: #17daa2; }
+
+.icon-disp {
+  width: 9vw;
+  height: 9vw;
+  margin: 0 auto;
+  background-position: center;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-color: lightgray; }
+  @media screen and (max-width: 460px) {
+    .icon-disp {
+      width: 30vw;
+      height: 30vw; } }
+
+.one-of-four-heading {
+  margin-top: 9vh;
+  font-size: 1.3em;
+  font-weight: 500; }
+  @media screen and (max-width: 768px) {
+    .one-of-four-heading {
+      margin-top: 4vh; } }
+
+.one-paraf {
+  margin-top: 4.5vh;
+  font-size: 0.6em;
+  line-height: 1.9;
+  color: #76828b; }
+  @media screen and (max-width: 768px) {
+    .one-paraf {
+      margin-top: 2vh; } }
+
+.four-divs-button {
+  margin: 12vh calc(50% - 60px) 1vh; }
+  @media screen and (max-width: 768px) {
+    .four-divs-button {
+      margin-top: 5vh; } }
+
+.site-header {
+  width: 100%;
+  height: 15vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 2px 14% 0 13%; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3px; }
+
+.logo-text {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  font-weight: 400;
+  display: flex;
+  align-items: center; }
+
+.logo-text::after {
+  display: block;
+  content: "";
+  width: 0.15em;
+  height: 0.15em;
+  background-color: #1effce;
+  border-radius: 50%;
+  position: relative;
+  top: 0.2em; }
+
+.navigation {
+  width: 45%;
+  display: flex;
+  justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .navigation {
+      width: 100%;
+      left: 0;
+      top: 0;
+      position: absolute; } }
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  @media screen and (max-width: 768px) {
+    .nav-list {
+      z-index: 10;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      flex-direction: column;
+      justify-content: flex-start;
+      top: 0;
+      padding-top: 10vh; }
+      .nav-list .open {
+        display: block; } }
+
+@media screen and (max-width: 768px) {
+  .nav-tab {
+    display: none;
+    margin-top: 2vh; }
+    .nav-tab .open {
+      display: block; } }
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 0.55em;
+  font-weight: 700; }
+  @media screen and (max-width: 768px) {
+    .nav-link {
+      font-size: 0.8em; } }

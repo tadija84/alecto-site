@@ -1,0 +1,21 @@
+{
+  "name": "alecto-design",
+  "version": "1.0.0",
+  "description": "basic one page site",
+  "main": "main.js",
+  "scripts": {
+    "test": "testing"
+  },
+  "keywords": [
+    "northern",
+    "lights"
+  ],
+  "author": "Tadija",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-scss-lint": "^1.0.0",
+    "gulp-watch": "^5.0.1"
+  }
+}

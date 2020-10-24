@@ -1,0 +1,52 @@
+.menu-button {
+  display: none;
+  position: absolute;
+  z-index: 17;
+  right: 5vw;
+  top: 5vw;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  @include transition-ease;
+  &__burger {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 28px;
+    height: 3px;
+    background-color: turquoise;
+    @include transition-ease;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      width: 28px;
+      height: 3px;
+      background-color: turquoise;
+      @include transition-ease;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      width: 28px;
+      height: 3px;
+      background-color: turquoise;
+      @include transition-ease;
+    }
+    &.open {
+      transform: rotate(360deg);
+      background: transparent;
+      &::before {
+        transform: rotate(45deg) translate(5px, 8px);
+      }
+      &::after {
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -7px);
+      }
+    }
+  }
+  @include media-tablet {
+    display: block;
+  }
+}

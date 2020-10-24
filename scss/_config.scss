@@ -1,0 +1,55 @@
+@mixin media-tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin media-phone {
+  @media screen and (max-width: 460px) {
+    @content;
+  }
+}
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+@font-face {
+  font-family: Raleway;
+  font-weight: 500;
+  src: url(./Raleway/static/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: Raleway;
+  font-weight: 900;
+  src: url(./Raleway/static/Raleway-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Raleway;
+  font-weight: 100;
+  src: url(./Raleway/static/Raleway-Light.ttf);
+}
+@font-face {
+  font-family: Raleway;
+  font-weight: 400;
+  src: url(./Raleway/static/Raleway-Italic.ttf);
+}
+@font-face {
+  font-family: Raleway;
+  font-weight: 400;
+  src: url(./Raleway/static/Raleway-Medium.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Raleway;
+  font-weight: 500;
+}
+.learn-more-button {
+  background-color: #17daa2;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  width: 120px;
+  height: 28px;
+  @include media-tablet {
+    margin: 0 calc(50% - 60px);
+  }
+}

@@ -1,0 +1,51 @@
+.hero-banner {
+  width: 100%;
+  height: 115vh;
+  background-image: url("./images/marcelo-quinan-R3pUGn5YiTg-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 45vh 13% 35vh;
+  display: flex;
+  justify-content: space-between;
+  @include media-tablet {
+    padding: 45vh 10% 20vh;
+  }
+  @include media-phone {
+    padding: 45vh 5% 10vh;
+  }
+}
+.carousell-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousell-heading {
+  color: white;
+  font-size: 2.6em;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  text-align: center;
+}
+.alecto-span {
+  font-weight: 600;
+}
+.carousell-paraf {
+  color: white;
+  font-weight: 300;
+}
+.carousell-button {
+  background-color: #00b6cb;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  width: 120px;
+  height: 32px;
+}
+.left-arrow,
+.right-arrow {
+  color: #00b6cb;
+  font-size: 3.5em;
+}
